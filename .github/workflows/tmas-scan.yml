@@ -24,9 +24,9 @@ jobs:
         with:
           version: '2'
           vulnerabilitiesScan: true
-          malwareScan: false
+          malwareScan: true
           secretsScan: true
           artifact: dir:./juice-shop-code-security-test
-          additionalArgs: --region=us-east-1
+          additionalArgs: --region=eu-central-1
           tmasApiKey: ${{ secrets.TMAS_API_KEY }}
           githubToken: ${{ secrets.GITHUB_TOKEN }}
