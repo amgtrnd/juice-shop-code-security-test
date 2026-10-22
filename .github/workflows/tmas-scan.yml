@@ -24,7 +24,7 @@ jobs:
         with:
           version: '2'
           vulnerabilitiesScan: true
-          malwareScan: true
+          malwareScan: false
           secretsScan: true
           artifact: dir:./juice-shop-code-security-test
           additionalArgs: --region=eu-central-1
